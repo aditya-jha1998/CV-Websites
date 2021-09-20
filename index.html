@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator websites</title>
+
+  <link rel="stylesheet" href="light.css" id="changetheme">
+
+</head>
+
+<body>
+
+  <div class="maincontent">
+    <input type="button" value="light-mode" id="theme" class="modechange" onclick="changemode()">
+    <div class="middlesection">
+      <div class="heading">
+        <h1>Calculator</h1>
+      </div>
+      <div class="upper">
+        <input id="result" class="different" type="text" disabled>
+        <input class="same" type="button" id="C" value="clear" onclick="resultClear()">
+        <input class="same" type="button" id="Ac" value="Ac" onclick="resultClearAll()">
+        <input class="same" type="button" id="smallbracket1" value="(" onclick="submit(value)">
+        <input class="same" type="button" id="square" value="sqrt" onclick="sqrt()">
+        <input class="same" type="button" id="radian" value="rad" onclick="degree_to_Radian()">
+
+
+      </div>
+
+      <div class="row1">
+        <input class="same" type="button" id="one" value="1" onclick="submit(value)">
+        <input class="same" type="button" id="two" value="2" onclick="submit(value)">
+        <input class="same" type="button" id="three" value="3" onclick="submit(value)">
+        <input class="same" type="button" id="plus" value="+" onclick="submit(value)">
+        <input class="same" type="button" id="sin" value="sin" onclick="sinFun()">
+        <input class="same" type="button" id="smallbracket2" value=")" onclick="submit(value)">
+        <input class="same" type="button" id="cosinverse" value="cos -1" onclick="cosInverseFunction()">
+        <input class="same" type="button" id="degree" value="deg" onclick="radian_to_degree()">
+
+      </div>
+      <div class="row2">
+        <input class="same" type="button" id="four" value="4" onclick="submit(value)">
+        <input class="same" type="button" id="five" value="5" onclick="submit(value)">
+        <input class="same" type="button" id="six" value="6" onclick="submit(value)">
+        <input class="same" type="button" id="minus" value="-" onclick="submit(value)">
+        <input class="same" type="button" id="cos" value="cos" onclick="cosFunction()">
+        <input class="same" type="button" id="pi" value="pi" onclick="CalculatePivalue()">
+        <input class="same" type="button" id="taninverse" value="tan -1" onclick="tanInverseFunction()">
+        <input class="same" type="button" id="factoial" value="X!" onclick=" FindFactorial()">
+
+      </div>
+      <div class="row3">
+        <input class="same" type="button" id="seven" value="7" onclick="submit(value)">
+        <input class="same" type="button" id="eight" value="8" onclick="submit(value)">
+        <input class="same" type="button" id="nine" value="9" onclick="submit(value)">
+        <input class="same" type="button" id="multiply" value="*" onclick="submit(value)">
+        <input class="same" type="button" id="tan" value="tan" onclick="tanFunction()">
+        <input class="same" type="button" id="exponention" value="e" onclick="ExponentionValue()">
+        <input class="same" type="button" id="sininverse" value="sin-1" onclick="sinInverseFunction()">
+        <input class="same" type="button" id="equal" value="=" onclick="evalute()  ">
+
+
+      </div>
+      <div class="row4">
+        <input class="same" type="button" id="divide" value="/" onclick="submit(value)">
+        <input class="same" type="button" id="zero" value="0" onclick="submit(value)">
+        <input class="same" type="button" id="point" value="." onclick="submit(value)">
+        <input class="same" type="button" id="equal" value="=" onclick="evalute()  ">
+        <input class="same" type="button" id="log" value="Ln" onclick="logFunction()">
+        <input class="same" type="button" id="xsquare" value="x^​2" onclick="Xsquare()">
+        <input class="same" type="button" id="power10" value="10^​x" onclick="CalculateTenPower()">
+        <input class="same" type="button" id="logbase10" value="log" onclick="FindlogBase10()">
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
